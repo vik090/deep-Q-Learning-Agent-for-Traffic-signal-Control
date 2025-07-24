@@ -46,20 +46,32 @@ pip install -r requirements.txt
 ## Project Structure
 
 ```
-.
-├── README.md
-├── training_main.py
-├── test_model.py
-├── generator.py
-├── model/
-│   ├── model.py
-│   └── ...
-├── tools/
-│   ├── utils.py
-│   └── ...
-├── episodes/
-│   └── ...
-└── requirements.txt
+DEEP-QLEARNING-AGENT-FOR-TRAFFIC-SIGNAL-CONTROL/
+├── TLCS/
+│   ├── __pycache__/
+│   └── intersection/
+│       ├── environment.net.xml         # SUMO network file
+│       ├── episode_routes.rou.xml      # Route file for traffic simulation
+│       └── sumo_config.sumocfg         # SUMO configuration
+├── generator.py                        # Traffic data generation
+├── memory.py                           # Experience replay buffer
+├── model.py                            # Neural network model
+├── testing_main.py                     # Entry point for testing
+├── testing_settings.ini                # Config file for testing
+├── testing_simulation.py               # Testing simulation logic
+├── training_main.py                    # Entry point for training
+├── training_settings.ini               # Config file for training
+├── training_simulation.py              # Training simulation logic
+├── utils.py                            # Helper utility functions
+├── visualization.py                    # Plotting and result visualization
+├── TLCS-colab-training.ipynb           # Google Colab-compatible training notebook
+├── requirements.txt                    # Project dependencies
+├── README.md                           # Project overview and documentation
+├── LICENSE                             # License information
+├── .gitattributes
+├── .gitignore
+└── venv/                               # Python virtual environment (excluded from version control)
+
 ```
 
 ---
